@@ -59,9 +59,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Chen YongAn
+- **Contact Email:** opensource@coinversation.cn
+- **Website:** www.coinversation.io
 
 ### Legal Structure
 
