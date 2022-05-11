@@ -102,29 +102,13 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
 - **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Implement Minting Center and Oracle
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
@@ -137,19 +121,50 @@ For each milestone,
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 1. | liquidity pool | Contracts that allow users to adjust the pool’s binding tokens, join and exit the pool, calculate price, trading using user-specified param and collect trading fee. |  
+| 2. | Pool Factory | Contracts enable users to create liquidity pools, as well as features such as seeing if a pool already exists. |  
+| 3. | Deposit Coin | Users generate cUSD by pledging interest-bearing stable coins, which also make the assets interest-bearing. |  
+| 4. | LP Token | We will create a ERC20 like contract that dedicated to manage LP tokens. |  
+| 5. | Oracle Integration | Utilizing the Chainlink pallet to get trusted price to feed to Minting center for forging and liquidating. |  
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Transaction Pool
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
 - **Costs:** 4,000 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 1. | Cooperation Layer | The agreement will work with external DEX and AMM to enable cUSD to circulate to the market |  
+| 2. | cUSD Price Peg | The price of cUSD is mainly maintained through Coinversation's own system ecology. |
+|    |   | A user holding CUSD debt may notice that CUSD is trading in a sub-$1 market and decide to buy some CUSD at that discount to pay off some debt. Relative to its volume, this purchase of CUSD will have a price increase effect. |
+|    |   | A user holding a component (valid collateral) may notice that CUSD is trading above $1 in one market and decide to open a position and sell the borrowed CUSD for use elsewhere. This deal will have a price reduction effect relative to its quantity. |
+|    |   | Users who hold other cryptocurrencies (stablecoins or not) may see CUSD traded differently on the two markets above and decide to buy CUSD on one market where the price is below $1 and at a price of sold on another where for $1 or more. This can also happen in reverse. |
+|    |   | In most cases, many market arbitrage is done by robots that constantly monitor markets to find opportunities to earn from these price gaps. The advantage is it can quickly fix the price gap. |
+
+
+### Milestone 3 — Interest from Multi-Chains、Liquidation、Stake Node(ERC20：CTO)
+
+- **Estimated duration:** 1 month
+- **FTE:**  2
+- **Costs:** 8,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 1. | Stake Node | The contract has ERC20 incentive properties and is rewarded with tokens (CTO) in three ways. The contract is able to deposit transaction fees and other proceeds from the platform from the trading pool. And the platform will repay the entire collateral system when it liquidates bad debts. |  
+| 2. | Liquidation | The liquidation mechanism is triggered when the debt of the user's collateralized assets exceeds the asset security threshold, which is carried out by the liquidator, who is the holder of the CTO. |  
+| 3. | Interest from Multi-Chains | Cross-chain asset transfer via XCMP for interest generation purposes, and the platform will show what chain they put into, what products they put into, and what the comprehensive rate of return is.  |  
 
 
 ## Future Plans
