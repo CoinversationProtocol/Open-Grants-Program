@@ -40,14 +40,7 @@ Coinversation is a yield aggregator platform that provides DeFi users with autom
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+Coinversation Protocol is a stable currency protocol for interest-bearing assets based on Polkadot's parachain. Users can synthesize CUSD through smart contracts and oracles using different currencies such as CTO and DOT.Users can mint CUSD by betting on interest generating tokens,flexible use of CTO allows users to participate in ecological maintenance to a greater extent,two-way incentive,and reduces risk significantly. Connect USDT, USDC and other stable currencies with Coinversation to form the largest stable currency trading platform in the Polkadot ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -85,10 +78,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://github.com/Coinversation
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+### Team LinkedIn Profiles 
 
 ## Development Status :open_book:
 
@@ -121,7 +111,7 @@ If you've already started implementing your project or it is part of a larger re
 | 0c. | Testing Guide | Core functions will be fully covered by integration testing. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | Our contracts will run on the parachain, so it’s no need to make a Dockerfile to test. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | liquidity pool | Contracts that allow users to adjust the pool’s binding tokens, join and exit the pool, calculate price, trading using user-specified param and collect trading fee. |  
+| 1. | Liquidity Pool | Contracts that allow users to adjust the pool’s binding tokens, join and exit the pool, calculate price, trading using user-specified param and collect trading fee. |  
 | 2. | Pool Factory | Contracts enable users to create liquidity pools, as well as features such as seeing if a pool already exists. |  
 | 3. | Deposit Coin | Users generate cUSD by pledging interest-bearing stable coins, which also make the assets interest-bearing. |  
 | 4. | LP Token | We will create a ERC20 like contract that dedicated to manage LP tokens. |  
@@ -137,7 +127,7 @@ If you've already started implementing your project or it is part of a larger re
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GNU General Public License v3.0 |
-| 0b. | Documentation | a basic tutorial that explains our minting and staking principle for users. |
+| 0b. | Documentation | a basic tutorial that explains our transaction pool principle for users. |
 | 0c. | Testing Guide | Core functions will be fully covered by integration testing. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | Our contracts will run on the parachain, so it’s no need to make a Dockerfile to test. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
@@ -158,7 +148,7 @@ If you've already started implementing your project or it is part of a larger re
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GNU General Public License v3.0 |
-| 0b. | Documentation | a basic tutorial that explains our minting and staking principle for users. |
+| 0b. | Documentation | a basic tutorial that explains our Interest from multi-chains、liquidation、stake node principle for users. |
 | 0c. | Testing Guide | Core functions will be fully covered by integration testing. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | Our contracts will run on the parachain, so it’s no need to make a Dockerfile to test. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
