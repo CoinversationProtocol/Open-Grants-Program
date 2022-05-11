@@ -116,10 +116,10 @@ If you've already started implementing your project or it is part of a larger re
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | GNU General Public License v3.0 |
+| 0b. | Documentation | a basic tutorial that explains our pool and dex’s principle for users. |
+| 0c. | Testing Guide | Core functions will be fully covered by integration testing. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | Our contracts will run on the parachain, so it’s no need to make a Dockerfile to test. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | liquidity pool | Contracts that allow users to adjust the pool’s binding tokens, join and exit the pool, calculate price, trading using user-specified param and collect trading fee. |  
 | 2. | Pool Factory | Contracts enable users to create liquidity pools, as well as features such as seeing if a pool already exists. |  
@@ -136,10 +136,10 @@ If you've already started implementing your project or it is part of a larger re
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | GNU General Public License v3.0 |
+| 0b. | Documentation | a basic tutorial that explains our minting and staking principle for users. |
+| 0c. | Testing Guide | Core functions will be fully covered by integration testing. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | Our contracts will run on the parachain, so it’s no need to make a Dockerfile to test. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | Cooperation Layer | The agreement will work with external DEX and AMM to enable cUSD to circulate to the market |  
 | 2. | cUSD Price Peg | The price of cUSD is mainly maintained through Coinversation's own system ecology. |
@@ -157,10 +157,10 @@ If you've already started implementing your project or it is part of a larger re
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0a. | License | GNU General Public License v3.0 |
+| 0b. | Documentation | a basic tutorial that explains our minting and staking principle for users. |
+| 0c. | Testing Guide | Core functions will be fully covered by integration testing. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | Our contracts will run on the parachain, so it’s no need to make a Dockerfile to test. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | Stake Node | The contract has ERC20 incentive properties and is rewarded with tokens (CTO) in three ways. The contract is able to deposit transaction fees and other proceeds from the platform from the trading pool. And the platform will repay the entire collateral system when it liquidates bad debts. |  
 | 2. | Liquidation | The liquidation mechanism is triggered when the debt of the user's collateralized assets exceeds the asset security threshold, which is carried out by the liquidator, who is the holder of the CTO. |  
