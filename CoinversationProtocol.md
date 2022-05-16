@@ -14,7 +14,7 @@ The stablecoin created by Coinversation Protocol is decentralized, multi-asset c
 
 ### Project Details
 
-![Sign-in Flow](https://raw.githubusercontent.com/hanwencheng/gists/master/Litentry/imgs/Sign-in%20Flow.png)
+![Sign-in Flow](https://github.com/CoinversationProtocol/Open-Grants-Program/blob/master/74e9c77e-090d-4c37-889a-335914f153f1.png)
 The main functional modules of the whole system are: Mint center, Cross-chain Interest, Platform Revenue, Liquidity Mining, Liquidation, Vault.
 
 #### Mint center
@@ -80,13 +80,7 @@ Founded by a US PhD team, the core members are from first-tier technology compan
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+The current progress is stuck at the [white paper](https://github.com/Coinversation/white-paper) stage.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -164,10 +158,7 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+**How did you hear about the Grants Program?** Web3 Foundation Website / Medium 
 
 -  https://www.coinversation.io/
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+-  https://github.com/Coinversation/white-paper
