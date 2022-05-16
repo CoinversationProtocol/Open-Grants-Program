@@ -14,6 +14,7 @@ The stablecoin created by Coinversation Protocol is decentralized, multi-asset c
 
 ### Project Details
 
+![Sign-in Flow](https://raw.githubusercontent.com/hanwencheng/gists/master/Litentry/imgs/Sign-in%20Flow.png)
 The main functional modules of the whole system are: Mint center, Cross-chain Interest, Platform Revenue, Liquidity Mining, Liquidation, Vault.
 
 #### Mint center
