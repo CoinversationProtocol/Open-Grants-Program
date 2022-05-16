@@ -3,7 +3,7 @@
 - **Project Name:** Coinversation Protocol
 - **Team Name:** Coinversation labs
 - **Payment Address:** 0xaB945b438EaB12A73f3d2e5301d53582Bb61f644(usdt)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ## Project Overview :page_facing_up:
 Coinversation Protocol is a stable currency protocol based on interest-bearing assets based on the parachain of Polkadot. Users can use different currencies such as CTO and DOT, etc to synthesize CUSD through smart contracts and oracle. Users can cast CUSD by staking tokens that can generate interest. Bridging USDT, USDC and other stable currencies to Coinversation to form the largest stable currency exchange platform in the Polkadot ecosystem. 
@@ -67,16 +67,13 @@ Founded by a US PhD team, the core members are from first-tier technology compan
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
 - https://github.com/Coinversation
+
+- https://github.com/FreePoi
+- https://github.com/LaceLetho
+- https://github.com/zhengyimeng
+- https://github.com/hailiting
+- https://github.com/C91F37
 
 ### Team LinkedIn Profiles 
 
@@ -94,14 +91,14 @@ If you've already started implementing your project or it is part of a larger re
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 ### Milestone 1 — Implement Minting Center and Oracle
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
+- **Estimated duration:** 2 month
+- **FTE:**  
 - **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
@@ -120,7 +117,7 @@ If you've already started implementing your project or it is part of a larger re
 
 ### Milestone 2 — Transaction Pool
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1.5 month
 - **FTE:**  1
 - **Costs:** 4,000 USD
 
@@ -141,7 +138,7 @@ If you've already started implementing your project or it is part of a larger re
 
 ### Milestone 3 — Interest from Multi-Chains、Liquidation、Stake Node(ERC20：CTO)
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 0.5 month
 - **FTE:**  2
 - **Costs:** 8,000 USD
 
@@ -159,10 +156,9 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+1. complete more assets that can be collateralized forging (e.g., AUSD ASTAR GMLR, etc.)
+2. complete more prophecy machine integration (single prophecy machine is not safe)
+3. complete more and more CUSD amm pools and use cases
 
 
 ## Additional Information :heavy_plus_sign:
@@ -171,6 +167,6 @@ Please include here
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
+-  https://www.coinversation.io/
 - If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
